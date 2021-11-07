@@ -13,6 +13,22 @@ def about(request):
     return render(request,'main/about.html')
 
 
+def ksushon(request):
+    return render(request,'main/ksushon.html')
+
+
+def lexa(request):
+    return render(request,'main/lexa.html')
+
+
+def jun(request):
+    return render(request,'main/jun.html')
+
+
+def mashka(request):
+    return render(request,'main/mashka.html')
+
+
 def create(request):
     error = ''
     if request.method == 'POST':
@@ -30,5 +46,6 @@ def create(request):
         'error': error
     }
     return render(request,'main/create.html', context)
+
 
 
